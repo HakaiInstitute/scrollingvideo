@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Average);
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+html {
+  scroll-behavior: smooth; }
+
+body {
+  background: black;
+  font-family: 'Average';
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  height: 1000vh; }
+
+.scrollholder {
+  min-width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-size: cover;
+  transition: all 0s; }
+
+.invis {
+  height: 0; }
+
+.intro {
+  position: relative;
+  overflow: hidden;
+  min-height: 80vh;
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+  box-sizing: content-box;
+  font-size: 1.2em;
+  margin: 0 auto;
+  z-index: 1000; }
+  @media screen and (min-width: 600px) {
+    .intro h1 {
+      max-width: 600px;
+      margin: 0 auto;
+      font-family: 'Fjalla One', sans-serif;
+      font-size: 120px;
+      color: #fff;
+      padding: 40px 0 0 0;
+      letter-spacing: -3px;
+      font-weight: 500;
+      text-transform: uppercase;
+      line-height: 130px;
+      text-shadow: 2px 2px 0 #080808, 3px 3px 0 rgba(243, 241, 237, 0.5), 4px 4px 0 rgba(243, 241, 237, 0.5), 0 0 25px rgba(243, 241, 237, 0.5); }
+      .intro h1 span.small {
+        font-size: 40px;
+        margin-left: 0;
+        position: absolute; }
+      .intro h1 span.large {
+        font-size: 180px;
+        margin: 0 0 0 -60px; }
+    .intro h2 {
+      max-width: 600px;
+      margin: 0 auto;
+      font-family: 'Fjalla One', sans-serif;
+      font-size: 20px;
+      color: #fff;
+      padding: 20px 0 10px 0;
+      letter-spacing: 3px;
+      font-weight: 500; }
+    .intro article {
+      max-width: 600px;
+      columns: 2;
+      width: 80%;
+      margin: 2em auto 5em;
+      text-align: left; } }
+  @media screen and (max-width: 600px) {
+    .intro h1 {
+      width: 90%;
+      margin: 0 auto;
+      font-family: 'Fjalla One', sans-serif;
+      font-size: 60px;
+      color: #fff;
+      padding: 40px 0;
+      letter-spacing: 2px;
+      font-weight: 500;
+      text-transform: uppercase;
+      line-height: 60px;
+      text-shadow: 2px 2px 0 #080808, 3px 3px 0 rgba(243, 241, 237, 0.5), 4px 4px 0 rgba(243, 241, 237, 0.5), 0 0 25px rgba(243, 241, 237, 0.5); }
+    .intro h2 {
+      width: 90%;
+      margin: 0 auto;
+      font-family: 'Fjalla One', sans-serif;
+      font-size: 20px;
+      color: #fff;
+      padding: 20px 0 10px 0;
+      letter-spacing: 3px;
+      font-weight: 500; }
+    .intro article {
+      width: 90%;
+      columns: 1;
+      margin: 2em auto 5em;
+      text-align: left; }
+    .intro p {
+      margin: 0 0 2rem 0; } }
