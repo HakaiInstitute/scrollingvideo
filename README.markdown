@@ -1,5 +1,8 @@
 # Scrolling Video 
 
+## DEMO
+https://hakaiinstitute.github.io/scrollingvideo/dist/
+
 ## Installation
 
 To view it, run the index in the dist folder.
