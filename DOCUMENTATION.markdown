@@ -1,8 +1,3 @@
-# CodePen Export with Build Process
-_Transform raw code into a browser-ready preview... offline_
-
-This package contains all of the original code ([src/](./src/)), the original in-browser preview ([/backup/dist](./backup/dist)), and a custom build script with preprocessors. You'll be able to edit and build for a local CodePen-like experience.
-
 ## Installation
 
 Ensure you have a recent version of [node & npm](https://nodejs.org/en/download/) or [yarn](https://yarnpkg.com/en/docs/install) installed.
@@ -46,15 +41,16 @@ npm run serve
 |-- /src/ - Your code
 |  |-- index.template.html - The wrapper around your compiled HTML that includes any external stylesheets and scripts
 |  |-- index.partial.(html|pug|haml|...) - The raw HTML input or preprocessor equivalent
-|  |-- style.(css|scss|less|...) - The raw CSS input, or preprocessor equivalent
-|  |-- script.(js|ts|coffee|...) - The raw JavaScript input, or preprocessor equivalent
+|
+|-- /assets/ - Where JS lives
+|  |-- script.js
+|
+|-- /video/ - Sliced frames of video
+|  |-- frame-001.jpg  to frame-300.jpg
 |
 |-- /dist/ - The compiled output after running `npm run build`
 |  |-- index.html
-|  |-- script.js
 |  |-- style.css
-|
-|-- /backup/ - Backup copy of the original code and in-browser preview from CodePen
-|  |-- /dist/
-|  |-- /src/
+|  |-- /assets/ - Where JS lives
+|  |  |-- script.js
 ```
