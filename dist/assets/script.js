@@ -9,7 +9,7 @@ jQuery(document).ready(function($) {
         return (pad + num).slice(-pad.length);
     }
 
-    var filmlength = 300; //Slice up the film and put into the directory using a slicing tool like
+    var filmlength = 315; //Slice up the film and put into the directory using a slicing tool like
 
     for (i = 1; i < filmlength + 1; i++) { //file starts at #001
         $('<div class="scrollholder frame-' + paddy(i, 3) + ' invis" style="background-image: url(video/frame-' + paddy(i, 3) + '.jpg)" />').appendTo('.imagescroll');
@@ -21,7 +21,11 @@ jQuery(document).ready(function($) {
         var s = $(window).scrollTop(),
             d = $(document).height(),
             c = $(window).height();
-        var percentage = Math.floor((s / (d - c)) * 100); //1-100 in real numbers
+        var percentage = Math.floor((s / (d - c)) * 100); //0-100 in real numbers
+
+        console.log(percentage)
+
+
         var videostill = paddy(Math.floor(((percentage / 100) * (filmlength - 1)) + 1), 3);
         var videostillnext = paddy(Math.floor(((percentage / 100) * (filmlength - 1)) + 2), 3);
 
