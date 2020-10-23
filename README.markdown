@@ -48,9 +48,8 @@ npm run serve
 |-- /src/ - Your code
 |  |-- index.template.html - The wrapper around your compiled HTML that includes any external stylesheets and scripts
 |  |-- index.partial.(html|pug|haml|...) - The raw HTML input or preprocessor equivalent
-|
-|-- /assets/ - Where JS lives
-|  |-- script.js
+|  |-- /assets/ - Where JS lives
+|  |  |-- script.js
 |
 |-- /video/ - Sliced frames of video
 |  |-- frame-001.jpg  to frame-300.jpg
